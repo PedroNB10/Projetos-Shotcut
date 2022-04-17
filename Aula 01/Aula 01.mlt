@@ -36,6 +36,25 @@
   <producer id="producer1" in="00:00:00.000" out="03:59:59.960">
     <property name="length">04:00:00.000</property>
     <property name="eof">pause</property>
+    <property name="resource">d:/Download/imagem_fundo.jpg</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2022-04-17T18:19:15</property>
+    <property name="shotcut:hash">4d363143856ec35e6a079282be3f52e6</property>
+    <property name="shotcut:caption">imagem_fundo.jpg</property>
+    <property name="xml">was here</property>
+  </producer>
+  <playlist id="playlist0">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V1</property>
+    <entry producer="producer1" in="00:00:00.000" out="00:00:19.960"/>
+  </playlist>
+  <producer id="producer2" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
     <property name="resource">Personagem.png</property>
     <property name="ttl">1</property>
     <property name="aspect_ratio">1</property>
@@ -52,7 +71,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">00:00:00.040=5.22257 580.148 167.419 504 1;00:00:10.000=876 580 167.419 504 1;00:00:19.720=1752 580 167.419 504 1</property>
+      <property name="transition.rect">00:00:00.000=8.00608 580 167.419 504 1;00:00:00.040=5.22257 580.148 167.419 504 1;00:00:10.000=876 580 167.419 504 1;00:00:19.720=1921.79 580 167.419 504 1</property>
       <property name="transition.valign">middle</property>
       <property name="transition.halign">center</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -61,18 +80,38 @@
       <property name="transition.fix_rotate_x">0</property>
     </filter>
   </producer>
-  <playlist id="playlist0">
+  <playlist id="playlist1">
     <property name="shotcut:video">1</property>
-    <property name="shotcut:name">V1</property>
-    <entry producer="producer1" in="00:00:00.000" out="00:00:19.960"/>
+    <property name="shotcut:name">V2</property>
+    <entry producer="producer2" in="00:00:00.000" out="00:00:19.960"/>
+  </playlist>
+  <chain id="chain0" out="00:02:55.840">
+    <property name="length">00:02:55.880</property>
+    <property name="eof">pause</property>
+    <property name="resource">d:/Documentos/Repositórios Git Hub/Projetos-Shotcut/Aula 01/raindrops-keep-falling-on-my-head.mp3</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">-1</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">a0ded6eeda848a24bceb9beb5e5d5655</property>
+    <property name="shotcut:caption">raindrops-keep-falling-on-my-head.mp3</property>
+    <property name="xml">was here</property>
+  </chain>
+  <playlist id="playlist2">
+    <property name="shotcut:audio">1</property>
+    <property name="shotcut:name">A1</property>
+    <entry producer="chain0" in="00:00:04.320" out="00:00:24.280"/>
   </playlist>
   <tractor id="tractor0" title="Shotcut version 22.03.30" in="00:00:00.000" out="00:00:19.960">
     <property name="shotcut">1</property>
-    <property name="shotcut:scaleFactor">1.69065</property>
+    <property name="shotcut:scaleFactor">1.44883</property>
     <property name="shotcut:projectAudioChannels">2</property>
     <property name="shotcut:projectFolder">1</property>
     <track producer="background"/>
     <track producer="playlist0"/>
+    <track producer="playlist1"/>
+    <track producer="playlist2" hide="video"/>
     <transition id="transition0">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
@@ -87,6 +126,28 @@
       <property name="mlt_service">frei0r.cairoblend</property>
       <property name="threads">0</property>
       <property name="disable">1</property>
+    </transition>
+    <transition id="transition2">
+      <property name="a_track">0</property>
+      <property name="b_track">2</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition3">
+      <property name="a_track">1</property>
+      <property name="b_track">2</property>
+      <property name="version">0.1</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="threads">0</property>
+      <property name="disable">0</property>
+    </transition>
+    <transition id="transition4">
+      <property name="a_track">0</property>
+      <property name="b_track">3</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
     </transition>
   </tractor>
 </mlt>
