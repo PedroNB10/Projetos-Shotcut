@@ -1,5 +1,5 @@
-<?xml version="1.0" standalone="no"?>
-<mlt LC_NUMERIC="C" version="7.6.0" title="Shotcut version 22.03.30" producer="main_bin">
+<?xml version="1.0" encoding="UTF-8"?>
+<mlt LC_NUMERIC="C" title="Shotcut version 22.03.30" producer="main_bin">
   <profile description="PAL 4:3 DV or DVD" width="1920" height="1080" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="16" display_aspect_den="9" frame_rate_num="25" frame_rate_den="1" colorspace="709"/>
   <producer id="producer0" in="00:00:00.000" out="00:09:56.520">
     <property name="length">04:00:00.000</property>
@@ -49,7 +49,7 @@
   <producer id="producer2" in="00:00:00.000" out="03:59:59.960">
     <property name="length">04:00:00.000</property>
     <property name="eof">pause</property>
-    <property name="resource">d:/Desktop/fundo preto.webp</property>
+    <property name="resource">fundo preto.webp</property>
     <property name="ttl">1</property>
     <property name="aspect_ratio">1</property>
     <property name="progressive">1</property>
@@ -83,7 +83,7 @@
   <producer id="producer3" in="00:00:00.000" out="03:59:59.960">
     <property name="length">04:00:00.000</property>
     <property name="eof">pause</property>
-    <property name="resource">d:/Desktop/37-378469_dark-city-wallpaper-cartoon-dark-city-background.jpg</property>
+    <property name="resource">37-378469_dark-city-wallpaper-cartoon-dark-city-background.jpg</property>
     <property name="ttl">1</property>
     <property name="aspect_ratio">1</property>
     <property name="progressive">1</property>
@@ -438,7 +438,7 @@
   <chain id="chain0" out="00:00:23.640">
     <property name="length">00:00:23.680</property>
     <property name="eof">pause</property>
-    <property name="resource">d:/Desktop/y2meta.com-20th Century Fox (2019) - 4K-(1080p).mp4</property>
+    <property name="resource">y2meta.com-20th Century Fox (2019) - 4K-(1080p).mp4</property>
     <property name="mlt_service">avformat-novalidate</property>
     <property name="seekable">1</property>
     <property name="audio_index">1</property>
@@ -644,7 +644,7 @@
   <chain id="chain1" out="00:00:03.480">
     <property name="length">00:00:03.520</property>
     <property name="eof">pause</property>
-    <property name="resource">d:/Desktop/moedamario.mp3</property>
+    <property name="resource">moedamario.mp3</property>
     <property name="mlt_service">avformat-novalidate</property>
     <property name="seekable">1</property>
     <property name="audio_index">0</property>
@@ -657,7 +657,7 @@
   <chain id="chain2" out="00:03:08.080">
     <property name="length">00:03:08.120</property>
     <property name="eof">pause</property>
-    <property name="resource">d:/Desktop/musicamario.mp3</property>
+    <property name="resource">musicamario.mp3</property>
     <property name="mlt_service">avformat-novalidate</property>
     <property name="seekable">1</property>
     <property name="audio_index">0</property>
@@ -670,7 +670,7 @@
   <chain id="chain3" out="00:00:08.440">
     <property name="length">00:00:08.480</property>
     <property name="eof">pause</property>
-    <property name="resource">d:/Desktop/musicavitoriamario.mp3</property>
+    <property name="resource">musicavitoriamario.mp3</property>
     <property name="mlt_service">avformat-novalidate</property>
     <property name="seekable">1</property>
     <property name="audio_index">0</property>
@@ -779,3 +779,4 @@
     </transition>
   </tractor>
 </mlt>
+
