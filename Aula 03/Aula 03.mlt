@@ -1,0 +1,781 @@
+<?xml version="1.0" standalone="no"?>
+<mlt LC_NUMERIC="C" version="7.6.0" title="Shotcut version 22.03.30" producer="main_bin">
+  <profile description="PAL 4:3 DV or DVD" width="1920" height="1080" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="16" display_aspect_den="9" frame_rate_num="25" frame_rate_den="1" colorspace="709"/>
+  <producer id="producer0" in="00:00:00.000" out="00:09:56.520">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">cenario.jpg</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">8c1f54d0a4a0eec77b795335b77df097</property>
+    <property name="shotcut:caption">cenario.jpg</property>
+    <property name="ignore_points">1</property>
+  </producer>
+  <producer id="producer1" in="00:00:00.000" out="00:09:56.520">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">mario.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="shotcut:caption">mario.png</property>
+    <property name="shotcut:hash">84d4c8e5ec7930dfdd4f2c6814d281cc</property>
+    <property name="ignore_points">1</property>
+    <property name="xml">was here</property>
+  </producer>
+  <playlist id="main_bin">
+    <property name="xml_retain">1</property>
+    <entry producer="producer0" in="00:00:00.000" out="00:09:56.520"/>
+    <entry producer="producer1" in="00:00:00.000" out="00:09:56.520"/>
+  </playlist>
+  <producer id="black" in="00:00:00.000" out="00:00:49.280">
+    <property name="length">00:00:49.320</property>
+    <property name="eof">pause</property>
+    <property name="resource">0</property>
+    <property name="aspect_ratio">1</property>
+    <property name="mlt_service">color</property>
+    <property name="mlt_image_format">rgba</property>
+    <property name="set.test_audio">0</property>
+  </producer>
+  <playlist id="background">
+    <entry producer="black" in="00:00:00.000" out="00:00:49.280"/>
+  </playlist>
+  <producer id="producer2" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">d:/Desktop/fundo preto.webp</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2022-04-18T00:38:33</property>
+    <property name="shotcut:hash">ae2031aff8db5fe907b02268e348bdd1</property>
+    <property name="shotcut:caption">fundo preto.webp</property>
+    <property name="xml">was here</property>
+    <filter id="filter0" in="00:00:04.440" out="00:00:10.640">
+      <property name="background">color:#00000000</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">-409.801 -150.667 2501.65 1261.61 1</property>
+      <property name="transition.valign">middle</property>
+      <property name="transition.halign">center</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+      <property name="transition.fix_rotate_x">0</property>
+    </filter>
+  </producer>
+  <playlist id="playlist1">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V1</property>
+    <blank length="00:00:23.680"/>
+    <entry producer="producer2" in="00:00:04.440" out="00:00:10.640"/>
+  </playlist>
+  <producer id="producer3" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">d:/Desktop/37-378469_dark-city-wallpaper-cartoon-dark-city-background.jpg</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2022-04-18T00:24:27</property>
+    <property name="shotcut:hash">8c8d8e45b4a2c65c8ef207d94f840f3c</property>
+    <property name="shotcut:caption">37-378469_dark-city-wallpaper-cartoon-dark-city-background.jpg</property>
+    <property name="xml">was here</property>
+    <filter id="filter1" in="00:00:00.640" out="00:00:04.400">
+      <property name="background">color:#00000000</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">-35.0856 -60.8955 1962.83 1226.87 1</property>
+      <property name="transition.valign">middle</property>
+      <property name="transition.halign">center</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+      <property name="transition.fix_rotate_x">0</property>
+    </filter>
+    <filter id="filter2" in="00:00:00.640" out="00:00:04.400">
+      <property name="start">1</property>
+      <property name="level">1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">brightnessOpacity</property>
+      <property name="alpha">00:00:00.000=0;00:00:01.840=1;00:00:03.760=0</property>
+      <property name="opacity">00:00:00.000=0;00:00:01.840=1;00:00:03.760=0</property>
+    </filter>
+    <filter id="filter3" in="00:00:00.640" out="00:00:04.280">
+      <property name="argument">THE PLUMBER</property>
+      <property name="geometry">545 121 937 115 1</property>
+      <property name="family">Super Mario 256</property>
+      <property name="size">96</property>
+      <property name="weight">750</property>
+      <property name="style">normal</property>
+      <property name="fgcolour">#ffffffff</property>
+      <property name="bgcolour">#00000000</property>
+      <property name="olcolour">#aa000000</property>
+      <property name="pad">0</property>
+      <property name="halign">center</property>
+      <property name="valign">bottom</property>
+      <property name="outline">3</property>
+      <property name="mlt_service">dynamictext</property>
+      <property name="shotcut:filter">dynamicText</property>
+      <property name="shotcut:usePointSize">1</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="shotcut:pointSize">72</property>
+    </filter>
+  </producer>
+  <producer id="producer5" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">cenario.jpg</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">8c1f54d0a4a0eec77b795335b77df097</property>
+    <property name="shotcut:caption">cenario.jpg</property>
+    <property name="ignore_points">0</property>
+    <filter id="filter6" in="00:00:04.920" out="00:00:07.440">
+      <property name="background">color:#00000000</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">1</property>
+      <property name="transition.rect">-0.435691 0 1920 1079.5 1</property>
+      <property name="transition.valign">middle</property>
+      <property name="transition.halign">center</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+      <property name="transition.fix_rotate_x">0</property>
+    </filter>
+    <filter id="filter4" in="00:00:04.920" out="00:00:07.440">
+      <property name="start">1</property>
+      <property name="level">1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">brightnessOpacity</property>
+      <property name="alpha">00:00:01.440=0;00:00:01.920=0.988889;00:00:02.560=0.913902</property>
+      <property name="opacity">00:00:01.440=0;00:00:01.920=0.988889;00:00:02.560=0.913902</property>
+    </filter>
+  </producer>
+  <producer id="producer4" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">cenario.jpg</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">8c1f54d0a4a0eec77b795335b77df097</property>
+    <property name="shotcut:caption">cenario.jpg</property>
+    <property name="ignore_points">0</property>
+    <filter id="filter5" out="00:00:07.680">
+      <property name="background">color:#00000000</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">1</property>
+      <property name="transition.rect">-0.435691 0 1920 1079.5 1</property>
+      <property name="transition.valign">middle</property>
+      <property name="transition.halign">center</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+      <property name="transition.fix_rotate_x">0</property>
+    </filter>
+    <filter id="filter7" out="00:00:07.680">
+      <property name="argument">Moh fome véi</property>
+      <property name="geometry">00:00:00.000|=286 739 784 119 1</property>
+      <property name="family">Wide Latin</property>
+      <property name="size">64</property>
+      <property name="weight">500</property>
+      <property name="style">normal</property>
+      <property name="fgcolour">#00007f</property>
+      <property name="bgcolour">#00000000</property>
+      <property name="olcolour">#00ffff</property>
+      <property name="pad">0</property>
+      <property name="halign">center</property>
+      <property name="valign">bottom</property>
+      <property name="outline">4</property>
+      <property name="mlt_service">dynamictext</property>
+      <property name="shotcut:filter">dynamicText</property>
+      <property name="shotcut:usePointSize">1</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="shotcut:pointSize">48</property>
+      <property name="disable">1</property>
+    </filter>
+  </producer>
+  <producer id="producer6" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">cenario.jpg</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">8c1f54d0a4a0eec77b795335b77df097</property>
+    <property name="shotcut:caption">cenario.jpg</property>
+    <property name="ignore_points">0</property>
+    <filter id="filter8" in="00:00:07.720" out="00:00:08.200">
+      <property name="background">color:#00000000</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">1</property>
+      <property name="transition.rect">-0.435691 0 1920 1079.5 1</property>
+      <property name="transition.valign">middle</property>
+      <property name="transition.halign">center</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+      <property name="transition.fix_rotate_x">0</property>
+    </filter>
+    <filter id="filter9" in="00:00:07.720" out="00:00:08.200">
+      <property name="argument">Moh fome véi</property>
+      <property name="geometry">00:00:00.000|=-11 735 784 119 1</property>
+      <property name="family">Wide Latin</property>
+      <property name="size">64</property>
+      <property name="weight">500</property>
+      <property name="style">normal</property>
+      <property name="fgcolour">#00007f</property>
+      <property name="bgcolour">#00000000</property>
+      <property name="olcolour">#00ffff</property>
+      <property name="pad">0</property>
+      <property name="halign">center</property>
+      <property name="valign">bottom</property>
+      <property name="outline">4</property>
+      <property name="mlt_service">dynamictext</property>
+      <property name="shotcut:filter">dynamicText</property>
+      <property name="shotcut:usePointSize">1</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="shotcut:pointSize">48</property>
+      <property name="disable">0</property>
+    </filter>
+  </producer>
+  <producer id="producer7" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">cenario.jpg</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">8c1f54d0a4a0eec77b795335b77df097</property>
+    <property name="shotcut:caption">cenario.jpg</property>
+    <property name="ignore_points">0</property>
+    <filter id="filter10" in="00:00:08.240" out="00:00:08.840">
+      <property name="background">color:#00000000</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">1</property>
+      <property name="transition.rect">-0.435691 0 1920 1079.5 1</property>
+      <property name="transition.valign">middle</property>
+      <property name="transition.halign">center</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+      <property name="transition.fix_rotate_x">0</property>
+    </filter>
+    <filter id="filter11" in="00:00:08.240" out="00:00:08.840">
+      <property name="argument">Moh fome véi</property>
+      <property name="geometry">00:00:00.000|=-11 735 784 119 1</property>
+      <property name="family">Wide Latin</property>
+      <property name="size">64</property>
+      <property name="weight">500</property>
+      <property name="style">normal</property>
+      <property name="fgcolour">#00007f</property>
+      <property name="bgcolour">#00000000</property>
+      <property name="olcolour">#00ffff</property>
+      <property name="pad">0</property>
+      <property name="halign">center</property>
+      <property name="valign">bottom</property>
+      <property name="outline">4</property>
+      <property name="mlt_service">dynamictext</property>
+      <property name="shotcut:filter">dynamicText</property>
+      <property name="shotcut:usePointSize">1</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="shotcut:pointSize">48</property>
+      <property name="disable">1</property>
+    </filter>
+  </producer>
+  <producer id="producer8" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">cenario.jpg</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">8c1f54d0a4a0eec77b795335b77df097</property>
+    <property name="shotcut:caption">cenario.jpg</property>
+    <property name="ignore_points">0</property>
+    <filter id="filter12" in="00:00:08.880" out="00:00:09.680">
+      <property name="background">color:#00000000</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">1</property>
+      <property name="transition.rect">-0.435691 0 1920 1079.5 1</property>
+      <property name="transition.valign">middle</property>
+      <property name="transition.halign">center</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+      <property name="transition.fix_rotate_x">0</property>
+    </filter>
+    <filter id="filter13" in="00:00:08.880" out="00:00:09.680">
+      <property name="argument">vo fazer um lanche</property>
+      <property name="geometry">00:00:00.000|=22 739 784 119 1</property>
+      <property name="family">Wide Latin</property>
+      <property name="size">64</property>
+      <property name="weight">500</property>
+      <property name="style">normal</property>
+      <property name="fgcolour">#00007f</property>
+      <property name="bgcolour">#00000000</property>
+      <property name="olcolour">#00ffff</property>
+      <property name="pad">0</property>
+      <property name="halign">center</property>
+      <property name="valign">bottom</property>
+      <property name="outline">4</property>
+      <property name="mlt_service">dynamictext</property>
+      <property name="shotcut:filter">dynamicText</property>
+      <property name="shotcut:usePointSize">1</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="shotcut:pointSize">48</property>
+      <property name="disable">0</property>
+    </filter>
+  </producer>
+  <producer id="producer9" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">cenario.jpg</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">8c1f54d0a4a0eec77b795335b77df097</property>
+    <property name="shotcut:caption">cenario.jpg</property>
+    <property name="ignore_points">0</property>
+    <filter id="filter14" in="00:00:09.720" out="00:00:19.440">
+      <property name="background">color:#00000000</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">1</property>
+      <property name="transition.rect">-0.435691 0 1920 1079.5 1</property>
+      <property name="transition.valign">middle</property>
+      <property name="transition.halign">center</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+      <property name="transition.fix_rotate_x">0</property>
+    </filter>
+    <filter id="filter15" in="00:00:09.720" out="00:00:19.440">
+      <property name="argument">vo fazer um lanche</property>
+      <property name="geometry">00:00:00.000|=22 739 784 119 1</property>
+      <property name="family">Wide Latin</property>
+      <property name="size">64</property>
+      <property name="weight">500</property>
+      <property name="style">normal</property>
+      <property name="fgcolour">#00007f</property>
+      <property name="bgcolour">#00000000</property>
+      <property name="olcolour">#00ffff</property>
+      <property name="pad">0</property>
+      <property name="halign">center</property>
+      <property name="valign">bottom</property>
+      <property name="outline">4</property>
+      <property name="mlt_service">dynamictext</property>
+      <property name="shotcut:filter">dynamicText</property>
+      <property name="shotcut:usePointSize">1</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="shotcut:pointSize">48</property>
+      <property name="disable">1</property>
+    </filter>
+  </producer>
+  <playlist id="playlist3">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V2</property>
+    <blank length="00:00:23.680"/>
+    <entry producer="producer3" in="00:00:00.640" out="00:00:04.280"/>
+    <entry producer="producer5" in="00:00:04.920" out="00:00:07.440"/>
+    <entry producer="producer4" in="00:00:00.080" out="00:00:07.680"/>
+    <entry producer="producer6" in="00:00:07.720" out="00:00:08.200"/>
+    <entry producer="producer7" in="00:00:08.240" out="00:00:08.840"/>
+    <entry producer="producer8" in="00:00:08.880" out="00:00:09.680"/>
+    <entry producer="producer9" in="00:00:09.720" out="00:00:19.440"/>
+  </playlist>
+  <chain id="chain0" out="00:00:23.640">
+    <property name="length">00:00:23.680</property>
+    <property name="eof">pause</property>
+    <property name="resource">d:/Desktop/y2meta.com-20th Century Fox (2019) - 4K-(1080p).mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">3fdfb1b4af60090c09cd3e7f0f117b79</property>
+    <property name="shotcut:caption">y2meta.com-20th Century Fox (2019) - 4K-(1080p).mp4</property>
+    <filter id="filter16" out="00:00:23.640">
+      <property name="background">color:#00000000</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">-46.7518 -22.268 2020.09 1136.3 1</property>
+      <property name="transition.valign">middle</property>
+      <property name="transition.halign">center</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </chain>
+  <producer id="producer10" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">mario.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="shotcut:caption">mario.png</property>
+    <property name="shotcut:hash">84d4c8e5ec7930dfdd4f2c6814d281cc</property>
+    <property name="ignore_points">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter17" in="00:00:00.280" out="00:00:03.960">
+      <property name="background">color:#00000000</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">884.557 492.973 172.802 230.27 1</property>
+      <property name="transition.valign">middle</property>
+      <property name="transition.halign">center</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+      <property name="transition.fix_rotate_x">0</property>
+    </filter>
+    <filter id="filter18" in="00:00:00.280" out="00:00:03.960">
+      <property name="start">1</property>
+      <property name="level">1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">brightnessOpacity</property>
+      <property name="alpha">00:00:00.000=0;00:00:00.840=1;00:00:03.160=1;00:00:03.720=0.0666667</property>
+      <property name="opacity">00:00:00.000=0;00:00:00.840=1;00:00:03.160=1;00:00:03.720=0.0666667</property>
+    </filter>
+  </producer>
+  <producer id="producer11" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">mario.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="shotcut:caption">mario.png</property>
+    <property name="shotcut:hash">84d4c8e5ec7930dfdd4f2c6814d281cc</property>
+    <property name="ignore_points">0</property>
+    <property name="xml">was here</property>
+    <filter id="filter19" in="00:00:00.280" out="00:00:02.680">
+      <property name="start">1</property>
+      <property name="level">1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">brightnessOpacity</property>
+      <property name="alpha">00:00:00.000=0;00:00:00.840=1;00:00:02.440=1</property>
+      <property name="opacity">00:00:00.000=0;00:00:00.840=1;00:00:02.440=1</property>
+    </filter>
+    <filter id="filter20" in="00:00:00.280" out="00:00:02.680">
+      <property name="mlt_service">avfilter.hflip</property>
+      <property name="mirror">flip</property>
+    </filter>
+    <filter id="filter21" in="00:00:00.280" out="00:00:02.680">
+      <property name="background">color:#00000000</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">1763 734 167 222.538 1</property>
+      <property name="transition.valign">middle</property>
+      <property name="transition.halign">center</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <producer id="producer12" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">mario.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="shotcut:caption">mario.png</property>
+    <property name="shotcut:hash">84d4c8e5ec7930dfdd4f2c6814d281cc</property>
+    <property name="ignore_points">0</property>
+    <property name="xml">was here</property>
+    <filter id="filter22" out="00:00:04.440">
+      <property name="mlt_service">avfilter.hflip</property>
+      <property name="mirror">flip</property>
+    </filter>
+    <filter id="filter23" out="00:00:04.440">
+      <property name="background">color:#00000000</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">00:00:00.080=1763.24 733.77 166.818 222.295 1;00:00:00.600=1371.77 734 166.818 222.295 1;00:00:01.440=1372 423.18 166.818 222.295 1;00:00:01.600~=1372 423 166.818 222.295 1;00:00:01.800~=1350.51 310.164 166.818 222.295 1;00:00:01.920~=1318.27 183 166.818 222.295 1;00:00:02.080~=1248.42 131.06 166.818 222.295 1;00:00:02.320|=1185.73 188.373 166.818 222.295 1;00:00:02.360~=1185.73 188.373 166.818 222.295 1;00:00:02.400~=1153.49 145.388 166.818 222.295 1;00:00:02.440~=1103.34 95.2388 166.818 222.295 1;00:00:02.480~=1062.15 82.7015 166.818 222.295 1;00:00:02.520~=1017.37 109.567 166.818 222.295 1;00:00:02.560~=967.224 152.552 166.818 222.295 1;00:00:02.600~=942.149 188.373 166.818 222.295 1;00:00:02.680~=909.91 227.776 166.818 222.295 1;00:00:02.760~=900.955 281.507 166.818 222.295 1;00:00:02.840=866.925 345.985 166.818 222.295 1;00:00:03.040|=669.91 346 166.818 222.295 1;00:00:03.080=669.91 346 166.818 222.295 1;00:00:03.360=670 34.3582 166.818 222.295 1;00:00:03.680=195.373 34 166.818 222.295 1;00:00:03.720|=195.373 34 166.818 222.295 1;00:00:03.800~=195.373 34 166.818 222.295 1;00:00:03.840~=177.463 10.7164 166.818 222.295 1;00:00:03.880~=147.015 -10.7761 166.818 222.295 1;00:00:03.920~=116.567 -12.5672 166.818 222.295 1;00:00:03.960~=100.448 10.7164 166.818 222.295 1;00:00:04.000~=48.5075 37.5821 166.818 222.295 1;00:00:04.040~=9.10448 78.7761 166.818 222.295 1;00:00:04.080~=-19.5522 266.836 166.818 222.295 1;00:00:04.120|=-19.5522 266.836 166.818 222.295 1;00:00:04.480~=-19.5522 266.836 166.818 222.295 1</property>
+      <property name="transition.valign">middle</property>
+      <property name="transition.halign">center</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <producer id="producer13" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">mario.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="shotcut:caption">mario.png</property>
+    <property name="shotcut:hash">84d4c8e5ec7930dfdd4f2c6814d281cc</property>
+    <property name="ignore_points">0</property>
+    <property name="xml">was here</property>
+    <filter id="filter24" in="00:00:04.480" out="00:00:06.160">
+      <property name="mlt_service">avfilter.hflip</property>
+      <property name="mirror">flip</property>
+      <property name="disable">1</property>
+    </filter>
+    <filter id="filter25" in="00:00:04.480" out="00:00:06.160">
+      <property name="background">color:#00000000</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">00:00:00.000~=-19.5522 266.836 166.818 222.295 1;00:00:00.240|=184.627 266.836 166.818 222.295 1;00:00:00.400~=184.627 266.836 166.818 222.295 1;00:00:00.480~=225.821 259.672 166.818 222.295 1;00:00:00.520~=265.224 252.507 166.818 222.295 1;00:00:00.560~=290.299 274 166.818 222.295 1;00:00:00.600~=326.119 295.493 166.818 222.295 1;00:00:00.640~=342.239 325.94 166.818 222.295 1;00:00:00.680~=379.851 424.448 166.818 222.295 1;00:00:00.800~=379.851 424.448 166.818 222.295 1;00:00:00.880~=413.881 406.537 166.818 222.295 1;00:00:00.960~=451.493 395.791 166.818 222.295 1;00:00:01.000~=490.896 406.537 166.818 222.295 1;00:00:01.040~=519.552 436.985 166.818 222.295 1;00:00:01.080~=539.254 485.343 166.818 222.295 1;00:00:01.120~=573.284 576.687 166.818 222.295 1;00:00:01.280~=573.284 576.687 166.818 222.295 1;00:00:01.320~=592.985 564.149 166.818 222.295 1;00:00:01.400~=661.045 556.985 166.818 222.295 1;00:00:01.440~=716.567 598.179 166.818 222.295 1;00:00:01.480~=750.597 621.463 166.818 222.295 1;00:00:01.560~=786.418 646.537 166.818 222.295 1;00:00:01.640~=818.657 732.507 166.818 222.295 1;00:00:01.720~=818.657 732.507 166.818 222.295 1</property>
+      <property name="transition.valign">middle</property>
+      <property name="transition.halign">center</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <producer id="producer14" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">mario.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="shotcut:caption">mario.png</property>
+    <property name="shotcut:hash">84d4c8e5ec7930dfdd4f2c6814d281cc</property>
+    <property name="ignore_points">0</property>
+    <property name="xml">was here</property>
+    <filter id="filter26" in="00:00:06.200" out="00:00:15.960">
+      <property name="mlt_service">avfilter.hflip</property>
+      <property name="mirror">flip</property>
+      <property name="disable">0</property>
+    </filter>
+    <filter id="filter27" in="00:00:06.200" out="00:00:15.960">
+      <property name="background">color:#00000000</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">00:00:00.000=818.657 732.507 166.818 222.295 1;00:00:01.080=-161.044 733 166.818 222.295 1</property>
+      <property name="transition.valign">middle</property>
+      <property name="transition.halign">center</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <playlist id="playlist4">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V3</property>
+    <entry producer="chain0" in="00:00:00.000" out="00:00:23.640"/>
+    <entry producer="producer10" in="00:00:00.280" out="00:00:03.960"/>
+    <blank length="00:00:00.080"/>
+    <entry producer="producer11" in="00:00:00.280" out="00:00:02.680"/>
+    <entry producer="producer12" in="00:00:00.000" out="00:00:04.440"/>
+    <entry producer="producer13" in="00:00:04.480" out="00:00:06.160"/>
+    <entry producer="producer14" in="00:00:06.200" out="00:00:15.960"/>
+  </playlist>
+  <chain id="chain1" out="00:00:03.480">
+    <property name="length">00:00:03.520</property>
+    <property name="eof">pause</property>
+    <property name="resource">d:/Desktop/moedamario.mp3</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">-1</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">0dce0f0b76969b979317cdbf67eaa3ac</property>
+    <property name="shotcut:caption">moedamario.mp3</property>
+    <property name="xml">was here</property>
+  </chain>
+  <chain id="chain2" out="00:03:08.080">
+    <property name="length">00:03:08.120</property>
+    <property name="eof">pause</property>
+    <property name="resource">d:/Desktop/musicamario.mp3</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">-1</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">6509ada94c6fee7842830e446b8f4757</property>
+    <property name="shotcut:caption">musicamario.mp3</property>
+    <property name="xml">was here</property>
+  </chain>
+  <chain id="chain3" out="00:00:08.440">
+    <property name="length">00:00:08.480</property>
+    <property name="eof">pause</property>
+    <property name="resource">d:/Desktop/musicavitoriamario.mp3</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">-1</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">070bc878d9ba3c551e89f64131a96f29</property>
+    <property name="shotcut:caption">musicavitoriamario.mp3</property>
+    <property name="xml">was here</property>
+  </chain>
+  <playlist id="playlist0">
+    <property name="shotcut:audio">1</property>
+    <property name="shotcut:name">A1</property>
+    <blank length="00:00:25.000"/>
+    <entry producer="chain1" in="00:00:00.000" out="00:00:01.600"/>
+    <blank length="00:00:02.760"/>
+    <entry producer="chain2" in="00:00:04.840" out="00:00:16.840"/>
+    <entry producer="chain3" in="00:00:00.600" out="00:00:06.360"/>
+  </playlist>
+  <tractor id="tractor0" title="Shotcut version 22.03.30" in="00:00:00.000" out="00:00:49.280">
+    <property name="shotcut">1</property>
+    <property name="shotcut:scaleFactor">1.01</property>
+    <property name="shotcut:projectAudioChannels">2</property>
+    <property name="shotcut:projectFolder">1</property>
+    <properties name="shotcut:markers">
+      <properties name="0">
+        <property name="text">Marker 1</property>
+        <property name="start">00:00:32.760</property>
+        <property name="end">00:00:32.760</property>
+        <property name="color">#008000</property>
+      </properties>
+      <properties name="1">
+        <property name="text">Marker 2</property>
+        <property name="start">00:00:27.480</property>
+        <property name="end">00:00:27.480</property>
+        <property name="color">#008000</property>
+      </properties>
+      <properties name="2">
+        <property name="text">Marker 3</property>
+        <property name="start">00:00:29.920</property>
+        <property name="end">00:00:29.920</property>
+        <property name="color">#008000</property>
+      </properties>
+      <properties name="3">
+        <property name="text">Marker 4</property>
+        <property name="start">00:00:29.400</property>
+        <property name="end">00:00:29.400</property>
+        <property name="color">#008000</property>
+      </properties>
+    </properties>
+    <track producer="background"/>
+    <track producer="playlist1"/>
+    <track producer="playlist3"/>
+    <track producer="playlist4"/>
+    <track producer="playlist0" hide="video"/>
+    <transition id="transition2">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition3">
+      <property name="a_track">1</property>
+      <property name="b_track">1</property>
+      <property name="version">0.1</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="threads">0</property>
+      <property name="disable">1</property>
+    </transition>
+    <transition id="transition6">
+      <property name="a_track">0</property>
+      <property name="b_track">2</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition7">
+      <property name="a_track">1</property>
+      <property name="b_track">2</property>
+      <property name="version">0.1</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="threads">0</property>
+      <property name="disable">0</property>
+    </transition>
+    <transition id="transition8">
+      <property name="a_track">0</property>
+      <property name="b_track">3</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition9">
+      <property name="a_track">1</property>
+      <property name="b_track">3</property>
+      <property name="version">0.1</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="threads">0</property>
+      <property name="disable">0</property>
+    </transition>
+    <transition id="transition0">
+      <property name="a_track">0</property>
+      <property name="b_track">4</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+  </tractor>
+</mlt>
